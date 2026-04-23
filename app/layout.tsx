@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "NS Cards",
     images: [
       {
-        url: "https://neosurf-verification-solde-ticket.vercel.app/og-image.png",
+        url: "https://neosurf-verification-solde-ticket.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
       },

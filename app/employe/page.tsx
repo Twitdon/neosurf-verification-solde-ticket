@@ -198,6 +198,10 @@ export default function EmployePage() {
                       textAlign: "center",
                       fontSize: "20px",
                       outline: "none",
+                      color: "#000",
+                      WebkitTextFillColor: "#000",
+                      background: "#fff",
+                      opacity: 1,
                     }}
                   />
 
@@ -219,6 +223,10 @@ export default function EmployePage() {
                       textAlign: "center",
                       fontSize: "20px",
                       outline: "none",
+                      color: "#000",
+                      WebkitTextFillColor: "#000",
+                      background: "#fff",
+                      opacity: 1,
                     }}
                   />
 
@@ -238,6 +246,10 @@ export default function EmployePage() {
                       textAlign: "center",
                       fontSize: "20px",
                       outline: "none",
+                      color: "#000",
+                      WebkitTextFillColor: "#000",
+                      background: "#fff",
+                      opacity: 1,
                     }}
                   />
                 </div>

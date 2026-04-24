@@ -190,7 +190,7 @@ export default function EmployePage() {
                   style={{
                     width: "22px",
                     height: "22px",
-                    border: "3px solid #45a8c9",
+                    border: "4px solid #45a8c9",
                     boxShadow: "0 0 4px rgba(69,168,201,0.4)",
                     borderRadius: "50%",
                     display: "flex",

@@ -68,6 +68,25 @@ export default function EmployePage() {
 
   return (
     <main style={{ minHeight: "100vh", background: "#e9ecef", fontFamily: "Arial, sans-serif" }}>
+      <style>
+        {`
+          @keyframes pulseCaptcha {
+            0% {
+              transform: scale(1);
+              box-shadow: 0 0 0 0 rgba(69, 168, 201, 0.25);
+            }
+            50% {
+              transform: scale(1.12);
+              box-shadow: 0 0 0 7px rgba(69, 168, 201, 0.15);
+            }
+            100% {
+              transform: scale(1);
+              box-shadow: 0 0 0 0 rgba(69, 168, 201, 0.25);
+            }
+          }
+        `}
+      </style>
+
       <div style={{ height: "100px", background: "#212853", display: "flex", alignItems: "center", paddingLeft: "30px" }}>
         <img src="/logo.png" alt="logo" style={{ height: "75px", objectFit: "contain" }} />
       </div>
@@ -179,6 +198,7 @@ export default function EmployePage() {
                     background: isChecked ? "#45a8c9" : "#fff",
                     transition: "0.2s",
                     flexShrink: 0,
+                    animation: !isChecked ? "pulseCaptcha 1.6s infinite ease-in-out" : "none",
                   }}
                 >
                   {isChecked && <span style={{ color: "#fff", fontSize: "14px", fontWeight: 700 }}>✓</span>}

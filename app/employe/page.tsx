@@ -184,7 +184,7 @@ export default function EmployePage() {
                   {isChecked && <span style={{ color: "#fff", fontSize: "14px", fontWeight: 700 }}>✓</span>}
                 </div>
 
-                <span style={{ fontSize: "14px", color: "#333", fontWeight: 500 }}>
+                <span style={{ fontSize: "12px", color: "#333", fontWeight: 500 }}>
                   JE NE SUIS PAS UN ROBOT.
                 </span>
 

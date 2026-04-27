@@ -29,6 +29,7 @@ export default function EmployePage() {
   const [part3, setPart3] = useState("");
   const [showCode, setShowCode] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
+  const [showImage, setShowImage] = useState(false);
 
   const input2Ref = useRef<HTMLInputElement>(null);
   const input3Ref = useRef<HTMLInputElement>(null);
@@ -59,7 +60,7 @@ export default function EmployePage() {
       return;
     }
 
-    alert("Code envoyé !");
+    setShowImage(true);
     setPart1("");
     setPart2("");
     setPart3("");
@@ -256,6 +257,32 @@ export default function EmployePage() {
           </div>
         </div>
       </div>
+      {showImage && (
+  <div
+    onClick={() => setShowImage(false)}
+    style={{
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      background: "rgba(0,0,0,0.6)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      zIndex: 9999,
+    }}
+  >
+    <img
+      src="/Valide.png"
+      style={{
+        maxWidth: "90%",
+        maxHeight: "80%",
+        borderRadius: "10px",
+      }}
+    />
+  </div>
+)}
     </main>
   );
 }

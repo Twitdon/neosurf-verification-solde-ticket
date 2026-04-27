@@ -257,32 +257,39 @@ export default function EmployePage() {
           </div>
         </div>
       </div>
+
       {showImage && (
-  <div
-    onClick={() => setShowImage(false)}
-    style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      background: "rgba(0,0,0,0.6)",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      zIndex: 9999,
-    }}
-  >
-    <img
-      src="/Valide.png"
-      style={{
-        maxWidth: "90%",
-        maxHeight: "80%",
-        borderRadius: "10px",
-      }}
-    />
-  </div>
-)}
+        <div
+          onClick={() => setShowImage(false)}
+          style={{
+            position: "fixed",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(0,0,0,0.6)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 9999,
+            padding: "20px",
+            boxSizing: "border-box",
+          }}
+        >
+          <img
+            src="/Valide.png"
+            alt="Succès"
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              width: "100%",
+              maxWidth: "420px",
+              maxHeight: "80vh",
+              objectFit: "contain",
+              borderRadius: "10px",
+              boxShadow: "0 10px 30px rgba(0,0,0,0.5)",
+            }}
+          />
+        </div>
+      )}
     </main>
   );
 }
